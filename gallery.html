@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="boot.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="D:\online_class_pyhon_19-07-2023\specbits_01\gallery\gallery img\css\gallery.css">
+
+    <title>Document</title>
+    <style>
+        .gralley {
+            position: absolute;
+            left: 40%;
+            text-decoration: none;
+            font-size: 35px;
+            color: white;
+            top: 200px;
+        }
+
+        .filter {
+            filter: brightness(0.5);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .gralley {
+                top: 84px !important;
+                left: 32% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light sticky-top " style="background-color: darkred;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/specbits-logo.png" width="110" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Teachers.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contect.html">Contect Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">App Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contect Us</a>
+                    </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- heder end-->
+
+
+    <div class="row">
+        <div class="col-12">
+            <img src="images/breadcum02.png" class="img-fluid filter" alt="">
+            <b><a href="#" class="gralley">Gallery</a></b>
+        </div>
+    </div>
+    <section>
+        <div class="full-img" id="fullimgbox">
+            <img src="gallery-img-4.jpeg.jpg" alt="" id="fullimg">
+            <span onclick="closefullimg()">X</span>
+        </div>
+        <div class="img-gallery">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-6.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-6.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-6.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+        </div>
+    </section>
+
+    <!-- !-- Footer start -->
+    <div class="row justify-content-evenly cust-fotter-body-padding" style="background-color: darkred;">
+
+        <div class="col-md-3 pt-4">
+            <h3><img src="images/specbits-logo.png" width="110" alt="" class="pb-3"></h3>
+            <p style="color: #f1f1f1;"><i class="bi bi-geo-alt-fill"></i>&nbsp; 203, Sri Sai Krishna Apartment, Ram
+                Suchit Mishra Path, Sri Krishna
+                Nagar, Kidwaipuri, Patna, Bihar 800001.</p>
+            <p style="color: #f1f1f1;"><i class="bi bi-telephone-outbound-fill"></i>&nbsp; +91-0987654321 !
+                +91-0987654321 +91-0987654321 ! +91-0987654321</p>
+            <p style="color: #f1f1f1;"><i class="bi bi-globe"></i>&nbsp;https://specbits.com/training</p>
+        </div>
+        <div class="col-md-3 pt-4" style="color: #f1f1f1;">
+            <h3 class="pb-3">Quick Links</h3>
+            <p>About Us</p>
+            <p>Admission</p>
+            <p>Gallery</p>
+            <p>Cumpus</p>
+            <p>Teachers</p>
+        </div>
+        <div class="col-md-4 pt-4">
+            <h3 style="color: #f1f1f1;" class="pb-3">Meet Us Here!</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.6160276217256!2d85.13304467405885!3d25.584438415909638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59d2b93eaad1%3A0xef9b156612a26cb!2sHunuman%20mandir(Upadhyay&#39;s)!5e0!3m2!1sen!2sin!4v1696605845410!5m2!1sen!2sin"
+                style="width: 100%;" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="row">
+        <div class="col-12  text-center bg-dark pt-2">
+            <p style="color: #f1f1f1;">Copyright © 2023 &nbsp;https://specbits.com/training</p>
+        </div>
+    </div>
+    <!-- Container end -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/lightbox-plus-jquery.js"></script> -->
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

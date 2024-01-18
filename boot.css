@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    overflow-x: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.85);
+    /* font-size: 17px; */
+    font-weight: 450;
+}
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0,0,0,.85);
+}
+.filter{
+    filter: brightness(0.5);
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 31px;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 2rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    /* font-size: 17px; */
+    font-weight: 450;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255);
+}
+.custom{
+        border: 1px solid darkred;
+        padding: 40px 25px;
+        transition: all 0.3s ease 0s;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,0.75rem);
+    padding-left: var(--bs-gutter-x,0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255);
+}
+.p-color{
+    color: #f1f1f1;
+}
+.h1-color{
+    color:darkred;
+}
+/* --------------------testimonial----------------- */
+a{
+    text-decoration: none;
+}
+#testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkred;
+}
+.testimonial-deading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.testimonial-deading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    color: darkred;
+    padding: 10px 20px;
+}
+.testimonial-deading span{
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgb(84, 61, 61);
+    background-color: #f1f1f1;
+    padding: 20px ;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    /* flex-direction: column; */
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color:darkred;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: darkred;
+    font-size: 0.8rem;
+}
+.review{
+    color:#f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.clints-comment{
+    font-size: 0.9rem;
+    color: darkred;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Mobile View CSS */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    .cust-fotter-body-padding {
+        padding: 10px 14px 5px 14px !important;
+    }
+}

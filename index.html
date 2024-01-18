@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Bootstrap Project</title>
+    <!-- <link rel="stylesheet" href="D:\online_class_pyhon_19-07-2023\specbits_01\gallery\gallery img\css\gallery.css"> -->
+    <!-- <link rel="stylesheet" href="D:\online_class_pyhon_19-07-2023\specbits_01\gallery\gallery img\css\lightbox.css"> -->
+    <!-- <link rel="stylesheet" href="D:\online_class_pyhon_19-07-2023\specbits_01\raf_file\testimonial\testimonial.css"> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light sticky-top " style="background-color: darkred;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/specbits-logo.png" width="110" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Teachers.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contect.html">Contect Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">App Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contect Us</a>
+                    </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/7.jpg" class="d-block w-100 filter" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/8.jpg" class="d-block w-100 filter" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/9.jpg" class="d-block w-100 filter" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- <hr> -->
+
+    <div class="container-fluid">
+        <!-- tagline -->
+        <!-- <div class="row">
+            <div class="col-12">
+                <h3 class="display-6 text-center mt-5 mb-2">
+                    About Us
+                </h3>
+            </div>
+        </div> -->
+        <div class="row justify-content-evenly text-center pt-5 pb-5">
+            <div class="col-md-3 custom">
+                <h1><i class="bi bi-telegram h1-color"></i></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta animi quasi ipsam deleniti illo
+                    magni qui, fuga, doloribus rerum placeat accusantium esse. Asperiores excepturi numquam alias
+                    perferendis laudantium quae sit?</p>
+            </div>
+            <div class="col-md-3 custom">
+                <h1><i class="bi bi-backpack4-fill h1-color"></i></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta animi quasi ipsam deleniti illo
+                    magni qui, fuga, doloribus rerum placeat accusantium esse. Asperiores excepturi numquam alias
+                    perferendis laudantium quae sit?</p>
+            </div>
+            <div class="col-md-3 custom">
+                <h1><i class="bi bi-airplane-engines-fill h1-color"></i></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta animi quasi ipsam deleniti illo
+                    magni qui, fuga, doloribus rerum placeat accusantium esse. Asperiores excepturi numquam alias
+                    perferendis laudantium quae sit?</p>
+            </div>
+        </div>
+        <!-- feature -->
+        <div class="row justify-content-evenly pt-5 pb-5" style="background-color: darkred; color: #f1f1f1;">
+            <div class="col-md-5 text-left ">
+                <!-- <h1><i class="bi bi-file-earmark-code-fill text-primary"></i></h1> -->
+                <h3 class="pb-3">About Specbits Traning School</h3>
+                <p>SpecBits is an IT Company in India, Bihar (India). Our journey began on 16th December 2016. We are
+                    successful business conglomerate with diverse interest in Information Technology, Financial
+                    Services, IT?</p>
+                <p>Training, and Facility Management Services. What makes us stand out from our peers is our commitment
+                    for
+                    delivering better value for the money our clients invest.</p>
+                <p>SpecBits combines world-class technologies and services with its technical expertise.Our digital
+                    Marketing Agency combines world class ideas and services with its marketing teams.</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <!-- <h1><i class="bi bi-easel-fill text-danger"></i></h1> -->
+                <!-- <h4>Coding is Art</h4> -->
+                <img src="images/School-children-wearing-school-uniforms.jpg" class="img-fluid" alt="...">
+            </div>
+            <!-- <div class="col-md-3 text-center">
+                <h1><i class="bi bi-calendar-range-fill text-success"></i></h1>
+                <h4>No More Coding</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur a
+                    ipsa deleniti veniam sit
+                    Recusandae repudiandae obcaecati nobis?</p>
+            </div> -->
+        </div>
+        <!-- <hr> -->
+        <!-- Gallery -->
+        <div class="full-img" id="fullimgbox">
+            <img src="gallery-img-4.jpeg.jpg" alt="" id="fullimg">
+            <span onclick="closefullimg()">X</span>
+        </div>
+        <div class="img-gallery">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-6.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-6.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-4.jpeg.jpg" onclick="openfullimg(this.src)">
+            <img src="gallery-img-5.jpeg.jpg" onclick="openfullimg(this.src)">
+        </div>
+        <!-- Gallery end-->
+        <!-- Growth Section-->
+        <div class="row justify-content-evenly pt-5 pb-5" style="background-color: darkred; color: #f1f1f1;">
+            <h3 class="display-6 text-center pt-3 pb-3">
+                Our Feature
+            </h3>
+            <div class="col-md-5">
+                <img src="images/growth.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-5 ">
+                <h5 class="mt-3">Web Development Traning</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <h5 class="mt-3">Website Development</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <h5 class="mt-3">App Development</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <h5 class="mt-3">Seo</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <h5 class="mt-3">Placement Traning</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-Primary" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <!-- card start -->
+        <!-- <div class="row">
+            <div class="col-12">
+                <h3 class="display-6 text-center pt-5 pb-5">Our Gratefull & Experienced Mentors</h3>
+            </div>
+        </div> -->
+        <div class="row justify-content-evenly pb-5" style="background-color: #f1f1f1;">
+            <h3 class="display-6 text-center pt-5 pb-5">Our Gratefull & Experienced Mentors</h3>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/Modi at 10.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modi Jii</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="https://en.wikipedia.org/wiki/Narendra_Modi" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/elon-musk.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Elon Musk</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="https://en.wikipedia.org/wiki/Elon_Musk" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/mark.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">mark</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="https://en.wikipedia.org/wiki/Mark_Zuckerberg" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <hr> -->
+        <!-- contect start-->
+        <div class="row justify-content-evenly pt-2 pb-5" style="background-color: darkred; color: #f1f1f1;">
+            <div class="col-md-5 mt-5">
+                <h3 class="mb-4">Contect Form</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Full Name">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control"
+                            placeholder="Lorem ipsum dolor, sit amet consectetur adipisicing elit.optio modi voluptatum, perferendis officiis."
+                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-5 mt-5">
+                <h3>Address</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    optio modi voluptatum, perferendis officiis.&nbsp;<i
+                        class="bi bi-telephone"></i>&nbsp;+91-0987654321</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.6160276217256!2d85.13304467405885!3d25.584438415909638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59d2b93eaad1%3A0xef9b156612a26cb!2sHunuman%20mandir(Upadhyay&#39;s)!5e0!3m2!1sen!2sin!4v1696605845410!5m2!1sen!2sin"
+                    style="width: 100%;" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Faq start-->
+        <div class="row justify-content-evenly pt-5 pb-5" style="background-color: #f1f1f1;">
+            <div class="col-md-10">
+                <h3 class="text-center pb-2">FAQ</h3>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer start -->
+        <div class="row justify-content-evenly pt-2 pb-5" style="background-color: darkred;">
+
+            <div class="col-md-3 pt-4">
+                <h3><img src="images/specbits-logo.png" width="110" alt="" class="pb-3"></h3>
+                <p style="color: #f1f1f1;"><i class="bi bi-geo-alt-fill"></i>&nbsp; 203, Sri Sai Krishna Apartment, Ram
+                    Suchit Mishra Path, Sri Krishna
+                    Nagar, Kidwaipuri, Patna, Bihar 800001.</p>
+                <p style="color: #f1f1f1;"><i class="bi bi-telephone-outbound-fill"></i>&nbsp; +91-0987654321 !
+                    +91-0987654321 +91-0987654321 ! +91-0987654321</p>
+                <p style="color: #f1f1f1;"><i class="bi bi-globe"></i>&nbsp;https://specbits.com/training</p>
+            </div>
+            <div class="col-md-3 pt-4" style="color: #f1f1f1;">
+                <h3 class="pb-3">Quick Links</h3>
+                <p>About Us</p>
+                <p>Admission</p>
+                <p>Gallery</p>
+                <p>Cumpus</p>
+                <p>Teachers</p>
+            </div>
+            <div class="col-md-4 pt-4">
+                <h3 style="color: #f1f1f1;" class="pb-3">Meet Us Here!</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.6160276217256!2d85.13304467405885!3d25.584438415909638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59d2b93eaad1%3A0xef9b156612a26cb!2sHunuman%20mandir(Upadhyay&#39;s)!5e0!3m2!1sen!2sin!4v1696605845410!5m2!1sen!2sin"
+                    style="width: 100%;" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="row">
+            <div class="col-12  text-center bg-dark pt-2">
+                <p style="color: #f1f1f1;">Copyright © 2023 &nbsp;https://specbits.com/training</p>
+            </div>
+        </div>
+        <!-- Container end -->
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        
+    <!-- <script src="js/lightbox-plus-jquery.js"></script> -->
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
